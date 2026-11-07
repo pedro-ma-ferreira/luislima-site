@@ -1,0 +1,30 @@
+:root{--bg:#7345f7;--btn:#6431f6;--fg:#fff;--head:#000}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.55}
+a{color:inherit}
+.site-header{background:var(--head);text-align:center;padding:24px 16px}
+.site-header h1{margin:0;font-weight:600;font-size:clamp(40px,7vw,70px);line-height:1.1}
+.site-header a{text-decoration:none}
+main{max-width:1200px;margin:0 auto;padding:24px 16px 8px}
+p{margin:0 auto 1.2em;max-width:900px}
+.has-text-align-center,p[align=center]{text-align:center}
+.has-xx-large-font-size{font-size:clamp(22px,3.2vw,32px)}
+img{max-width:100%;height:auto;display:block;margin:0 auto}
+figure{margin:0 0 1.2em}
+figcaption{text-align:center;font-size:16px;margin-top:.5em}
+strong{font-weight:600}
+.wp-block-columns{display:flex;gap:24px;align-items:flex-start;margin-bottom:1.2em}
+.wp-block-columns.are-vertically-aligned-center{align-items:center}
+.wp-block-column{flex:1 1 0;min-width:0}
+.wp-block-image.aligncenter,.aligncenter{text-align:center}
+video.clip,iframe{display:block;margin:0 auto 1.2em;max-width:100%;background:#000;border:0;border-radius:4px}
+video.clip{max-width:100%;height:auto;object-fit:contain}
+.wp-block-buttons{display:flex;justify-content:center;gap:12px;margin:1em 0}
+.wp-block-button__link{display:inline-block;background:var(--btn);color:#fff;text-decoration:none;border-radius:6px;padding:12px 24px;font-size:16px}
+.wp-block-button__link:hover{filter:brightness(1.15)}
+.wp-block-spacer{max-height:42px}
+body.home figure a img{border-radius:4px;transition:transform .15s}
+body.home figure a:hover img{transform:scale(1.02)}
+body.home figcaption{font-size:15px}
+@media (max-width:781px){.wp-block-columns{flex-direction:column}.wp-block-column{flex-basis:100%!important;width:100%}}
