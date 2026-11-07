@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Parking – Luís Lima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="project">
+<header class="site-header"><h1><a href="/">Car Parking</a></h1></header>
+<main>
+<p class="has-text-align-center">A fun Spike project is a <strong>self-parking car</strong>. Such a car must have two wheels connected to motors, a balancing ball, a big frame for the hub, two cameras to measure distance, and a light camera to measure reflection. The <strong>reflection camera </strong>must go in the front of the car so it can easily follow a black track on the floor. The <strong>front distance camera </strong>is used to prevent the car from bumping inside the parking lot. The <strong>side distance camera</strong> is used to know when to turn into the parking lot. Let's see how this all works below!</p>
+
+<div class="wp-block-columns"><div class="wp-block-column" style="flex-basis:100%"><figure class="wp-block-image size-large"><img loading="lazy" src="/media/2024/10/Code.png" alt="" class="wp-image-426"/><figcaption class="wp-element-caption">Spike self-parking car code</figcaption></figure>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:100%"><figure class="wp-block-image size-large"><img loading="lazy" src="/media/2024/10/CarTrack-536x1024.png" alt="" class="wp-image-576"/></figure>
+</div>
+</div>
+
+<p class="has-text-align-center">First, we define the ports where the motors for the wheels connect, in this case, A and B. Then we set the speed for the car at 30%. Then we start moving along the edge of the black line until we find the parking lot. The car seeks and follows the black line by <strong>checking how much light is reflected from the floor</strong>. A completely white surface would reflect 100% of the light back. A completely black surface would not reflect any light back. Therefore, in order to follow the edge of the black line we want the light camera to reflect about 50% of the light. When this happens the car should go straight. When the car is on the light portion of the floor it should turn right. This is obtained by moving the car with some power to the right. That's what the first start moving block does. When the car is on the light part of the floor far away from the black track, <strong>the reflected light minus 50 is about 40, so it will turn right</strong>. When the car is mostly on the light part of the floor but catches a little bit of the black track, <strong>the reflected light minus 50 is about 20, so the car will turn right but less so</strong>. When the car is on top of the black track, <strong>the reflected light minus 50 is about -40, so it will turn to the opposite side</strong> (left). When the car is on the edge of the black track, <strong>the reflected light is about 50, so the car will not turn</strong>. A reflected light of 50% is the target the car should follow. The program above keeps adjusting the movement of the car until the side distance camera is less than 30 centimeters of something, which allows for finding the parking lot. Finally, we realized that turning with a power of 40 would be too much and the car would have a hard time to stabilize on the track, so we divide that by 1.5 to smooth the movement of the car. </p>
+
+<p align="center"><video class="clip" controls playsinline preload="metadata" style="width:640px;aspect-ratio:1280/720" src="/media/video/1023823219.mp4"></video>
+
+<p class="has-text-align-center">Second, the car must start turning right about 90 degrees. We use the <strong>yaw angle</strong> to do this. The way angle measures <strong>how many degrees the hub turned from a given   reference using the hub's gyroscope</strong>. We start by setting it to zero. Then we keep on turning until the yaw angle reaches close to 90 degrees, at which point we stop the car from moving. To turn the car, <strong>we move the wheels at different speeds</strong>. In the code above we move the left wheel at speed 30 and the right wheel at speed 15 and, therefore, the car will turn right. This will make the car turn smoothly into the parking lot.</p>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<p class="has-text-align-center">Finally, the car drives straight inside the parking lot until the front distance camera senses the wall, at which point the car stops and displays a check mark indicating that it is done! The full demonstration is below!</p>
+
+<p align="center"><video class="clip" controls playsinline preload="metadata" style="width:360px;aspect-ratio:720/1280" src="/media/video/1023823206.mp4"></video>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="/">The end!</a></div>
+</div>
+</main>
+</body>
+</html>
