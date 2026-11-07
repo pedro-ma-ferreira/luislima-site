@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circuits – Luís Lima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="project">
+<header class="site-header"><h1><a href="/">Circuits</a></h1></header>
+<main>
+<p class="has-text-align-center" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Electric charge moves along conductors, creating a flow called <strong>electric current</strong>. Putting several conductors together builds an <strong>electric circuit</strong>. Some conductors allow electric charges to flow more easily than others. How much opposition the conductor offers to the flow of electric charge is called <strong>resistance</strong>. Resistance is measured in Ohms.</p>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<p class="has-text-align-center" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">The first circuit below connects a battery to an LED using a resistor to control the flow of current through the LED. This prevents the LED from burning! The <strong>battery has an outlet that is negatively charged</strong>. The amount of electric charge is measured in Volts. Electric charge flows from that outlet through the circuit until it meets the <strong>switch</strong>. If the switch is open, the electric charge cannot go through and there is no current in the LED, which is then off. If the switch is closed, <strong>the electric charge goes through and lights up the LED</strong>. </p>
+
+<div class="wp-block-columns"><div class="wp-block-column"><figure class="wp-block-video"><video width="384" height="284" controls src="/media/2023/11/YesGate.mp4"></video></figure>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-video"><video width="384" height="284" controls src="/media/2023/11/NotGate.mp4"></video></figure>
+</div>
+</div>
+
+<p class="has-text-align-center">The second circuit above implements a <strong>NOT gate using a transistor</strong>. This transistor allows <strong>current to pass through if the base is positively charged</strong>. Thus, we connect the base of the transistor to the positive outlet of the battery with a switch and another resistor to control the flow of current. When the switch is closed, the current flows through the transistor from the negative outlet of the battery to the positive one without going through the LED, which is then off. Otherwise, the current flows through the LED lightning it up. If S represents the switch and L represents the LED, we have <strong>L=!S</strong>, where ! is a symbol usually used in computer coding to represent not.</p>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<p class="has-text-align-center">The battery is like a high mountain where skiers start from. The LED is a significant drop in altitude. The <strong>resistor is a pack of bumps on the way to control the flow of current</strong>, which ends up being constant across the circuit. This is shown in the first picture below. The second picture below shows the diagram for the NOT gate using Tinkercad. The movie below shows the<strong> flow of electric charge through the NOT gate</strong> using Circuit-js.</p>
+
+<div class="wp-block-columns"><div class="wp-block-column"><figure class="wp-block-image size-large"><img loading="lazy" src="/media/2023/11/SkiDraw-1024x496.png" alt="" class="wp-image-196"/><figcaption class="wp-element-caption">Electric charge as skiers</figcaption></figure>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-image size-large"><img loading="lazy" src="/media/2023/11/GATE-NOT-DRAW-1024x1010.png" alt="" class="wp-image-194"/><figcaption class="wp-element-caption">NOT gate in Tinkercad</figcaption></figure>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-video"><video class="clip" controls playsinline preload="metadata" src="/media/2023/11/GATE-NOT-video.mp4"></video><figcaption class="wp-element-caption">NOT gate in Circuit-js</figcaption></figure>
+</div>
+</div>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="/">The end!</a></div>
+</div>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+</main>
+</body>
+</html>
