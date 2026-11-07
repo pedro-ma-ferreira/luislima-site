@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Domino Logic – Luís Lima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="project">
+<header class="site-header"><h1><a href="/">Domino Logic</a></h1></header>
+<main>
+<p class="has-text-align-center has-background-color has-text-color has-link-color">I just found out that one can <strong>code logic gates using dominos</strong>! The ideas are here: <a href="https://www.youtube.com/watch?v=w6E7aQnA4Ws">https://www.youtube.com/watch?v=w6E7aQnA4W</a>s. In the video below, I code the AND gate, which outputs 1 only when both inputs are 1. With dominos, <strong>we code a 0 with standing dominos and a 1 with falling dominos</strong>. In the  circuit below, 0 and 0 means that nothing moves, so the output is 0. The "short" input does not connect directly to the output, so when we press it, denoting a 1, the output will remain at 0. When we press the "long" input the dominos start falling around the long path, but they do not reach the output because at the same time an interrupt starts running and blocks the longer path. It is crucial that the long path is long enough for this strategy to work. Finally, when both the "short" and the "long" inputs are pressed, the long path starts running and the "short" input interrupts the interrupt allowing the long path to run all the way to the output, turning it into 1. See this in action below!  </p>
+
+<p align="center"><video class="clip" controls playsinline preload="metadata" style="width:640px;aspect-ratio:1080/1080" src="/media/video/1023866167.mp4"></video>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="/">The end!</a></div>
+</div>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+</main>
+</body>
+</html>
