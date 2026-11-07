@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logic – Luís Lima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="project">
+<header class="site-header"><h1><a href="/">Logic</a></h1></header>
+<main>
+<p class="has-text-align-center" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">An <strong>OR gate</strong> lights up the LED when <strong>switch 1 is on or when switch 2 is on</strong>. We can build this circuit by connecting the <strong>transistors in "parallel"</strong>. Parallel means that one path is an alternative to another path when paths are "side by side". </p>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<p class="has-text-align-center" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">A <strong>NOR gate</strong> will do the opposite and light up the LED only when both switches are off. The NOR gate is obtained by <strong>driving the flow of current through the LED when the OR gate is "open"</strong>. That is, the negative outlet of the battery is directly connected to the LED through a resistor, and electric charge chooses this path to flow through when the OR gate does not allow current to flow. When the OR gate is "closed", the current flows through it because this path offers less resistance than the LED, leaving the LED off. The pictures and videos below show these circuits and the corresponding truth tables. </p>
+
+<div class="wp-block-columns"><div class="wp-block-column"><video class="clip" controls playsinline preload="metadata" style="width:360px;aspect-ratio:720/1280" src="/media/video/886746474.mp4"></video>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-image size-large"><img loading="lazy" src="/media/2023/11/DRAW-OR-GATE-1024x870.png" alt="" class="wp-image-202"/><figcaption class="wp-element-caption">Tinkercad OR circuit</figcaption></figure>
+
+<figure class="wp-block-image aligncenter size-full is-resized"><img loading="lazy" src="/media/2023/11/TT-OR-NOR.png" alt="" class="wp-image-220" style="width:182px;height:auto"/><figcaption class="wp-element-caption">Truth tables</figcaption></figure>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-video"><video class="clip" controls playsinline preload="metadata" src="/media/2023/11/GATE-OR-video.mp4"></video><figcaption class="wp-element-caption">OR circuit in Circuit-js</figcaption></figure>
+
+<figure class="wp-block-video"><video class="clip" controls playsinline preload="metadata" src="/media/2023/11/GATE-NOR-video.mp4"></video><figcaption class="wp-element-caption">NOR circuit in Circuit-js</figcaption></figure>
+</div>
+</div>
+
+<p class="has-text-align-center">An <strong>AND gate</strong> lights up the LED when <strong>switch 1 is on and when switch 1 is on</strong>. We can build this circuit by connecting the <strong>transistors in "series"</strong>. Series means that there is only one path with conductors in tandem. A <strong>NAND gate</strong> will do the opposite and shut down the LED only when both switches are on. Using an idea similar to the one employed to design the NOR gate, The NAND gate is obtained by <strong>allowing the flow of current through the LED when the AND gate is "open"</strong>. When the AND gate is "closed", the current flows through it, because that's the path of least resistance, leaving the LED off. The pictures and videos below show these circuits and the truth tables. </p>
+
+<div class="wp-block-columns"><div class="wp-block-column"><video class="clip" controls playsinline preload="metadata" style="width:360px;aspect-ratio:720/1280" src="/media/video/886746432.mp4"></video>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-image size-large"><img loading="lazy" src="/media/2023/11/DRAW-AND-GATE-1024x864.png" alt="" class="wp-image-207"/><figcaption class="wp-element-caption">Tinkercad AND circuit</figcaption></figure>
+
+<figure class="wp-block-image size-full"><img loading="lazy" src="/media/2023/11/TT-AND-NAND.png" alt="" class="wp-image-222"/><figcaption class="wp-element-caption">Truth tables</figcaption></figure>
+</div>
+
+<div class="wp-block-column"><figure class="wp-block-video"><video class="clip" controls playsinline preload="metadata" src="/media/2023/11/GATE-AND-video.mp4"></video><figcaption class="wp-element-caption">AND circuit in Circuit-js</figcaption></figure>
+
+<figure class="wp-block-video"><video class="clip" controls playsinline preload="metadata" src="/media/2023/11/GATE-NAND-video.mp4"></video><figcaption class="wp-element-caption">NAND circuit in Circuit-js</figcaption></figure>
+</div>
+</div>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+
+<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button" href="/">The end!</a></div>
+</div>
+
+<div style="height:42px" aria-hidden="true" class="wp-block-spacer"></div>
+</main>
+</body>
+</html>
